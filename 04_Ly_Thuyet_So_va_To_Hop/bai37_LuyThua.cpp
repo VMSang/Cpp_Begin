@@ -17,6 +17,6 @@ ll powfixadvanced2(ll a, ll b, ll c){
 int main(){
 	ll a, b;
 	cin>>a>>b;
-	cout<<luythua(a,b,1000000007);		
+	cout<<powfixadvanced2(a,b,1000000007);
 	return 0;
 }

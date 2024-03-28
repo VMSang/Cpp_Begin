@@ -13,8 +13,6 @@ int lcm(int a, int b){
 	return a*b / gcd(a,b); 
 }
 int main(){
-	ios::sync_with_stdio(false);
-	cin.tie(nullptr);
 	int a,b,c,d; cin>>a>>b>>c>>d;
 	int ucln = gcd(gcd(a,b),gcd(c,d));
 	cout<<ucln<<" ";

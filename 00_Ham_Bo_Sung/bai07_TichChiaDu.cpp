@@ -4,14 +4,29 @@ using namespace std;
 using ll = long long;
 
 int main(){
-	ios::sync_with_stdio(false);
-	cin.tie(nullptr);
+	// int n; cin>>n;
+	// ll mul = 1, mod = 1e9 + 7;
+	// for(int i=1; i<=n; i++){
+	// 	int N; cin>>N;
+	// 	mul *= N % mod;
+	// }
+	// cout<<mul % mod;
+
+	// int n; cin>>n;
+	// ll mul = 1, mod = 1e9 + 7;
+	// for(int i=0; i<n; i++){
+	// 	int x; cin>>x;
+	// 	mul = ((mul%mod)*(x%mod))%mod;
+	// }
+	// cout<<mul;
+
 	int n; cin>>n;
-	ll mul = 1, mod = 10e9 + 7;
-	for(int i=1; i<=n; i++){
-		int N; cin>>N;
-		mul *= N % mod;
+	ll mil = 1, mod = 1e9 +7;
+	for(int i=0; i<n; i++){
+		int x; cin>>x;
+		mil = mil * x % mod;
+		mil %= mod;
 	}
-	cout<<mul % mod;
+	cout<<mil;
 	return 0;
 }

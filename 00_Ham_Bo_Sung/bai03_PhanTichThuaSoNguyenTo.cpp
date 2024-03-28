@@ -14,7 +14,7 @@ void pt1(int n){
 			}
 		}
 	}
-	if (n>1)
+	if (n>1) //là thừa số cuối cùng luôn có mũ = 1, chỗ này in ra cái dư cuối
 		cout<<n;
 }
 //Cách 2 : In ra các thừa số nguyên tố kèm theo số mũ
@@ -48,11 +48,10 @@ void pt3(int n){
 		cout<<"x"<<n;
 }
 int main(){
-	ios::sync_with_stdio(false);
-	cin.tie(nullptr);
 	int n; cin>>n;
 	pt1(n); cout<<endl;
 	pt2(n); cout<<endl;
 	pt3(n); cout<<endl;
 	return 0;
 }
+

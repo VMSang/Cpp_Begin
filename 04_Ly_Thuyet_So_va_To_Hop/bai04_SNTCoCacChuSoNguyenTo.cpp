@@ -61,7 +61,7 @@ int main(){
 	//main cach2
 	for(int i=a; i<=b; i++){
 		if (csnt(i) && Prime(i)){
-			dem ++
+			dem ++;
 		}
 	}
 	cout<< dem;
