@@ -1,28 +1,41 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-using ll = long long;
-
-//code trau
-bool sohoanhao(ll n){
-	ll sum = 1;
-	for(int i=2; i<=sqrt(n); i++){
-		if(n%i == 0)
-			sum+=i;
-		if(i!=n/i)
-			sum+=n/i;
-	}
-	return sum == n;
+std::vector<long long> v;
+bool isPrime(int n)
+{
+    if (n < 2)
+        return false;
+    for (int i = 2; i * i <= n; ++i)
+        if (n % i == 0)
+            return false;
+    return true;
 }
-
-//phi ham euler: p: là snt, và 2^p - 1 cũng là snt thì 2^(p-1) * s^p -1 == số hoàn hảo
-bool sohoanhao2(ll n){
-
+//phi ham euler: p: la snt, va 2^p - 1 cung la snt thi 2^(p-1) * s^p -1 == shh
+void sohoanhao2(){
+	for (int p=1; p<=32; p++)
+	{
+		if (isPrime(p))
+		{
+			long long tmp = pow(2,p) - 1;
+			if (isPrime(tmp))
+			{
+				long long res = pow(2,p-1) * tmp;
+				v.push_back(res);
+			}
+		}
+	}
 }
 
 int main(){
-	ios::sync_with_stdio(false);
-	cin.tie(nullptr);
-
-	return 0;
+	sohoanhao2();
+	long long n; cin>>n;
+	 for(long long x : v)
+    {
+        if(n == x)
+        {
+            cout << "YES";
+            return 0;
+        }
+    }
+    cout << "NO";
 }
