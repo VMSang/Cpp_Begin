@@ -14,11 +14,14 @@ node* create(int x){
 }
 
 void duyet(node *head){
+	int dem = 0;
 	while (head != NULL){
 		cout<<head<<endl;
 		cout<<head->data;
 		head = head -> next;
+		dem++;
 	}
+	return dem;
 }
 
 node* themdau(node *&head, int x){
@@ -29,6 +32,7 @@ node* themdau(node *&head, int x){
 	return head;
 }
 
+// chu y them vao dslk rong
 void themcuoi(node *&head, int x){
 	node *moi = create(x);
 	node *tmp = head; //dung de duyet
@@ -41,6 +45,23 @@ void themcuoi(node *&head, int x){
 	}
 	//tmp la node cuoi
 	tmp -> next = moi; 
+}
+
+// chu y them vao dau
+void themgiua(node *head, int data, int position){
+	node *moi = new node;
+	if(k<1 || k>=duyet(head)+1)
+		return;
+	if(k==1){
+		themdau(head, data);
+		return;
+	}
+	node *tmp = head;
+	for(int i = 1; i<=k-2; i++){
+		tmp = tmp -> next;
+	}
+	moi -> next = tmp -> next;
+	tmp -> next = moi;
 }
 int main() {
     node *head = create(3);
