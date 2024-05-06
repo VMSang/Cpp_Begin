@@ -4,7 +4,9 @@ using namespace std;
 //cũng có giới hạn phần tử như mảng (10^7)
 
 int main() {    
+        //so sánh first trước nếu bàng nhau thì so second
  	pair<int, int> p = make_pair(100, 200);
+
  	vector<int> a;
  	a.push_back(100);
  	a.push_back(200);
