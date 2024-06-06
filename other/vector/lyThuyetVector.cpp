@@ -21,7 +21,7 @@ int main() {
  	}
 
  	int n; cin>>n;
-        //vector<int> v[3]; //mỗi phần tử là 1 vectỏ
+        //vector<int> v[3]; //mỗi phần tử là 1 vector
  	vector<int> b(n, 100); //khởi tạo sẵng n ô, có thể pushback thêm, số 100 là khởi tạo cho all phần tử bằng 100 (option)
  	for(int i=0; i<n; i++){
         //nếu kh khởi tạo sẵng thì dùng tmp trong for để lưu, sau đó pushback tmp vào
