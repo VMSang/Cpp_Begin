@@ -1,0 +1,6 @@
+ý tưởng: tạo mảng đủ lớn, thông qua chỉ số của mảng để đánh dấu, đếm tần suất của giá trị tương ứng, nhớ khai náo dư 1
+tối ưu hơn: duyệt đến giá trị lớn nhất
+
+điểm yếu:
++) không đánh dấu được giá trị số âm
++) không giá trị quá lớn (0->10^7)
