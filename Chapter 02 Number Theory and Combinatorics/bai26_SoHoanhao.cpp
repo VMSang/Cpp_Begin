@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-std::vector<long long> v;
+vector<long long> v;
 bool isPrime(int n)
 {
     if (n < 2)
@@ -10,9 +10,10 @@ bool isPrime(int n)
             return false;
     return true;
 }
-//phi ham euler: p: la snt, va 2^p - 1 cung la snt thi 2^(p-1) * s^p -1 == shh
+//phi ham euler: p: la snt, va 2^p - 1 cung la snt thi 2^(p-1) * 2^p -1 == shh
 void sohoanhao2(){
-	for (int p=1; p<=32; p++)
+	//p = 1 khong the tao ra shh
+	for (int p=2; p<=32; p++)
 	{
 		if (isPrime(p))
 		{

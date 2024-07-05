@@ -46,5 +46,14 @@ int main() {
     // chỉ nên dùng cho iterator, pair
     auto it = v.begin();
 
+    //cach doc nhieu so tren nhieu dong mà không biết trước số lượng
+    while(cin>>n){
+        v.push_back(n);
+    }
+    //đọc nguyen một dòng
+    string s;
+    while(getline(cin,s)){
+        v.push_back(s);
+    }
     return 0;
 }
