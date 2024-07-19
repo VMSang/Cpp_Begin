@@ -19,7 +19,7 @@ int main() {
     	for(int x : dske[i]){
     		cout<<x<<" ";
     	}
-    	cout<<endl;
+    	cout<<"\n";
     }
     return 0;
 }
