@@ -80,5 +80,12 @@ int main() {
 
 
 //unordered_set: chỉ có các giá trị khác nhau nhưng không được xắp xếp có thứ tự
+
+	std::set<int> myset = {1, 2, 3, 4, 5, 6};
+
+	auto range = myset.equal_range(3);
+
+	std::cout << "Lower bound points to: " << *range.first << '\n';
+	std::cout << "Upper bound points to: " << *range.second << '\n';
 	return 0;
 }
