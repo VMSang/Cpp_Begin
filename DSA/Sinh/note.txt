@@ -1,0 +1,9 @@
+xâu nhị phân thực chất là tập con
+- duyệt tất cả cập của tập con của một tập n phần tử chính là sinh xâu nhị phân
+- cho n phần tử, chia n đó thành hai nửa sao cho độ chênh lệch theo quy tắt nào đó (có thể là nhỏ nhất)
+
+
+Bài toán 2: sinh tổ hợp chập k của n (sinh tập con có k phần tử từ n phần tử) không xét thứ tự, thường lưu theo thứ tự tăng dần 
+- đi tìm bit đầu tiên chưa đạt max (n-k+i), sau đó tăng các bit vừa đi qua lên 1 đơn vị, để đảm bảo lớn hơn mà nhỏ nhất (vd: 13789 -> 14567)
+
+
