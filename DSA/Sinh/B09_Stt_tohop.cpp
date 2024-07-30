@@ -6,7 +6,7 @@ void init(){
 	cin>>n>>k;
 	for(int i=1; i<=k; i++){
 		cin>>x[i];
-		a[i] = i
+		a[i] = i;
 	}
 }
 
