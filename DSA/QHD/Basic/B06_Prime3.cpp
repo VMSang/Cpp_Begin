@@ -23,10 +23,11 @@ int main() {
    	
    	sang();
    	
-    f[0] = 0;
-    for(int i=1; i<maxN; i++){
+    f[0] = f[1] = 0;
+    f[2] = 2;
+    for(int i=3; i<maxN; i++){
     	if(prime[i] == 0){
-    		f[i] = f[i-1] + 1;
+    		f[i] = (f[i-1] * i) % (100000007);
     	} 
     	else {
     		f[i] = f[i-1];
@@ -36,7 +37,7 @@ int main() {
     int q; cin>>q;
     while(q--){
     	int n; cin>>n;
-    	cout<<f[n]<<"\n";
+    	cout<<f[n] % (100000007) <<"\n";
     }
     return 0;
 }
