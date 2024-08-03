@@ -11,15 +11,14 @@ int main() {
     f[0] = 1;
     for (long long i = 1; i <= 1000000; i++) {
         f[i] = (f[i-1] * i) % 100000007;
-        cout<<f[i]<<endl;
     }
 
     int q; 
     cin >> q;
     while (q--) {
-        long n; 
+        long long n; 
         cin >> n;
-        cout << f[n] % 100000007 << "\n";
+        cout << f[n] << "\n";
     }
     return 0;
 }
